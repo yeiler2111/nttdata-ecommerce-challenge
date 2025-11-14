@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: ntt-postgres
+    environment:
+      POSTGRES_DB: ntt_tienda
+      POSTGRES_USER: ntt_user
+      POSTGRES_PASSWORD: ntt_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - ntt-network
+
+  app:
+    build: .
+    container_name: ntt-api
+    depends_on:
+      - db
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/ntt_tienda
+      SPRING_DATASOURCE_USERNAME: ntt_user
+      SPRING_DATASOURCE_PASSWORD: ntt_pass
+      APP_JWT_SECRET: UnaClaveMasLargaParaDocker_123456789
+      APP_JWT_EXPIRATION_MS: 3600000
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+    - "8083:8080"
+    networks:
+      - ntt-network
+
+networks:
+  ntt-network:
+
+volumes:
+  db-data:
