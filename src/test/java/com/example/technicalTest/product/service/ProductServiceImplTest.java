@@ -22,7 +22,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 import com.example.technicalTest.product.dto.ProductRequest;
 import com.example.technicalTest.product.dto.ProductResponse;
-import com.example.technicalTest.product.entitie.Product;
+import com.example.technicalTest.product.entity.Product;
 import com.example.technicalTest.product.repository.ProductRepository;
 
 class ProductServiceImplTest {

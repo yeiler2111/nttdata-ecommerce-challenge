@@ -2,7 +2,7 @@ package com.example.technicalTest.order.entity;
 
 import java.math.BigDecimal;
 
-import com.example.technicalTest.product.entitie.Product;
+import com.example.technicalTest.product.entity.Product;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

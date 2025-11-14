@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.example.technicalTest.product.entitie.Product;
+import com.example.technicalTest.product.entity.Product;
 import com.example.technicalTest.product.repository.ProductRepository;
 import com.example.technicalTest.user.entity.User;
 import com.example.technicalTest.user.repository.UserRepository;

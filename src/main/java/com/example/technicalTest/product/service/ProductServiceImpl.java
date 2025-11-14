@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.technicalTest.product.dto.ProductRequest;
 import com.example.technicalTest.product.dto.ProductResponse;
-import com.example.technicalTest.product.entitie.Product;
+import com.example.technicalTest.product.entity.Product;
 import com.example.technicalTest.product.repository.ProductRepository;
 import com.example.technicalTest.product.util.Specifications;
 

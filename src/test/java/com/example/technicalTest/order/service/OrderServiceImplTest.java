@@ -20,7 +20,7 @@ import com.example.technicalTest.order.dto.OrderResponse;
 import com.example.technicalTest.order.entity.Order;
 import com.example.technicalTest.order.repository.OrderItemRepository;
 import com.example.technicalTest.order.repository.OrderRepository;
-import com.example.technicalTest.product.entitie.Product;
+import com.example.technicalTest.product.entity.Product;
 import com.example.technicalTest.product.repository.ProductRepository;
 import com.example.technicalTest.user.entity.User;
 import com.example.technicalTest.user.repository.UserRepository;
